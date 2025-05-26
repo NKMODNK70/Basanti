@@ -15,12 +15,7 @@ from AnonXMusic.logging import LOGGER
 from AnonXMusic.platforms._httpx import HttpxClient
 from AnonXMusic.utils.database import is_on_off
 from AnonXMusic.utils.formatters import time_to_seconds
-
-
-#api-integration
- 
-API_URL = getenv("API_URL", "http://dlapi.128.199.90.171.sslip.io") #youtube song url
-API_KEY = getenv("API_KEY", None) # youtube song api key, get it from https://t.me/rishu1286
+from config import API_URL, API_KEY
 
 class YouTubeUtils:
     @staticmethod
